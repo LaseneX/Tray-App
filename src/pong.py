@@ -194,9 +194,14 @@ def main():
         if ball.x < 0:
             right_score += 1
             ball.reset()
+            left_paddle.reset()
+            right_paddle.reset()
         elif ball.x > WIDTH:
             left_score += 1
             ball.reset()
+            left_paddle.reset()
+            right_paddle.reset()
+
 
         won = False
         if left_score >= WINNING_SCORE:
