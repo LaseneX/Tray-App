@@ -48,10 +48,7 @@ class SystemTrayApp:
         pong_path = os.path.join(os.path.dirname(__file__), "pong.py")
 
         if os.path.exists(pong_path):
-            subprocess.Popen(
-                [sys.executable, pong_path],
-                creationflags=subprocess.CREATE_NO_WINDOW
-            )
+            subprocess.Popen([sys.executable, pong_path])
         else:
             print("pong.py not found:", pong_path)
 
@@ -59,10 +56,7 @@ class SystemTrayApp:
         connectFour_path = os.path.join(os.path.dirname(__file__), "connectFour.py")
 
         if os.path.exists(connectFour_path):
-            subprocess.Popen(
-                [sys.executable, connectFour_path],
-                creationflags=subprocess.CREATE_NO_WINDOW
-            )
+            subprocess.Popen([sys.executable, connectFour_path])
         else:
             print("connectFour.py not found:", connectFour_path)
 
@@ -70,10 +64,7 @@ class SystemTrayApp:
         snake_path = os.path.join(os.path.dirname(__file__), "snake.py")
 
         if os.path.exists(snake_path):
-            subprocess.Popen(
-                [sys.executable, snake_path],
-                creationflags=subprocess.CREATE_NO_WINDOW
-            )
+            subprocess.Popen([sys.executable, snake_path])
         else:
             print("snake.py not found:", snake_path)
 
